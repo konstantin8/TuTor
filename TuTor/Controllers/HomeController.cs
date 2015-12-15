@@ -8,6 +8,7 @@ namespace TuTor.Controllers
 {
     public class HomeController : Controller
     {
+        //[RequireHttps]
         public ActionResult Index()
         {
             return View();
@@ -23,6 +24,13 @@ namespace TuTor.Controllers
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+
+        public ActionResult Mycourses()
+        {
+            ViewBag.Message = "Your courses.";
 
             return View();
         }

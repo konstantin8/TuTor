@@ -58,11 +58,11 @@ namespace TuTor
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "703967177373-kcjp5frig1mh8cgiiaf2b29akmkclacj.apps.googleusercontent.com",
+                ClientSecret = "GrE9VWbN7NHRVwlEUvOmf3AH"
+            });
         }
     }
 }

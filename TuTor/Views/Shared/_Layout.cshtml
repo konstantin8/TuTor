@@ -60,15 +60,18 @@
 
                 @*@Html.ActionLink("TuTor", "Index", "Index", new { area = "" }, new { @class = "navbar-brand" })*@
 
-                <a class="navbar-brand" href="#">@Html.ActionLink("TuTor", "Index", new { area = "" }, new { @class = "navbar-brand" })</a>
+                <a class="navbar-brand" href="#">@Html.ActionLink("TuTor", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })</a>
                 <a class="navbar-brand" href="#"></a>
-                <a class="navbar-brand" href="mycourses.html">Мои курсы</a>
+                <a class="navbar-brand" href="#">@Html.ActionLink("Мои курсы", "Mycourses", "Home", new { area = "" }, new { @class = "navbar-brand" })</a>
             </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li> @Html.ActionLink("Войти", "Login", "Account")</li>
+            <div class="float-right" @*class="collapse navbar-collapse" id="myNavbar"*@>
+                @*<ul class="nav navbar-nav navbar-right">*@
+                    @*<section id="login">*@
+                        @Html.Partial("_LoginPartial")
+                    @*</section>*@
+                    @*<li> @Html.ActionLink("Войти", "Login", "Account")</li>*@
 
-                </ul>
+                @*</ul>*@
                 @*@Html.Partial("_LoginPartial")*@
             </div>
         </div>
