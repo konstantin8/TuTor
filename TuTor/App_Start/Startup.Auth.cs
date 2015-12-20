@@ -54,9 +54,9 @@ namespace TuTor
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "982202271825452",
+               appSecret: "c618279fc7e6b5730a1096069c5a8e1a");
 
             app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             {
