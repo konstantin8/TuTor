@@ -192,7 +192,18 @@
     <Content Include="Content\images\physic7.jpg" />
     <Content Include="Content\images\physic8.jpg" />
     <Content Include="Content\images\regBg.jpg" />
+    <Content Include="Content\images\sldr1.jpg" />
+    <Content Include="Content\images\sldr2.jpg" />
+    <Content Include="Content\images\sldr3.jpg" />
+    <Content Include="Content\images\sldr4.jpg" />
+    <Content Include="Content\images\sldr5.jpg" />
+    <Content Include="Content\images\testsldr1.jpg" />
     <Content Include="Content\images\VK.png" />
+    <Content Include="Content\images\znamdr1.jpg" />
+    <Content Include="Content\images\znamdr2.jpg" />
+    <Content Include="Content\images\znamdr3.jpg" />
+    <Content Include="Content\images\znamdr4.jpg" />
+    <Content Include="Content\images\znamdr5.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -247,6 +258,10 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\Mycourses.cshtml" />
     <Content Include="Views\Home\Buy.cshtml" />
+    <Content Include="Views\Home\Math6.cshtml" />
+    <Content Include="Views\Home\plusdr.cshtml" />
+    <Content Include="Views\Home\TESTplusdr.cshtml" />
+    <Content Include="Views\Home\znamdr.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -8,7 +8,7 @@ namespace TuTor.Controllers
 {
     public class HomeController : Controller
     {
-        
+
         public ActionResult Index()
         {
             return View();
@@ -37,6 +37,30 @@ namespace TuTor.Controllers
         public ActionResult Buy()
         {
             ViewBag.Message = "Buy";
+
+            return View();
+        }
+        public ActionResult Math6()
+        {
+            ViewBag.Message = "Math 6";
+
+            return View();
+        }
+        public ActionResult plusdr()
+        {
+            ViewBag.Message = "plusdr";
+
+            return View();
+        }
+        public ActionResult TESTplusdr()
+        {
+            ViewBag.Message = "plusdr";
+
+            return View();
+        }
+        public ActionResult znamdr()
+        {
+            ViewBag.Message = "znamdr";
 
             return View();
         }

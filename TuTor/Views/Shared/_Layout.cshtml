@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <link rel="shortcut icon" href="../Content/images/favicon.png" type="image/png">
-    <title>TuTor: Главная</title>
+    <title>TuTor</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -61,9 +61,17 @@
 
                 @*@Html.ActionLink("TuTor", "Index", "Index", new { area = "" }, new { @class = "navbar-brand" })*@
 
-                <a class="navbar-brand" href="#">@Html.ActionLink("TuTor", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })</a>
-                <a class="navbar-brand" href="#"></a>
-                <a class="navbar-brand" href="#">@Html.ActionLink("Мои курсы", "Mycourses", "Home", new { area = "" }, new { @class = "navbar-brand" })</a>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <a class="navbar-brand" href="#">@Html.ActionLink("TuTor", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })</a>
+                    <a class="navbar-brand" href="#"></a>
+                    <a class="navbar-brand" href="#">@Html.ActionLink("Мои курсы", "Mycourses", "Home", new { area = "" }, new { @class = "navbar-brand" })</a>
+                }
+                else
+                {
+                    <a class="navbar-brand" href="#">@Html.ActionLink("TuTor", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })</a>
+
+                }
             </div>
             <div class="float-right" @*class="collapse navbar-collapse" id="myNavbar"*@>
                 @*<ul class="nav navbar-nav navbar-right">*@
@@ -81,7 +89,7 @@
 
     <div class="container">
         @RenderBody()
-        <hr />
+
     </div>
 
     <footer class="container-fluid text-center">
