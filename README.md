@@ -1,2 +1,2 @@
 # TuTor
-nure project
+Сourse Project. 2015
